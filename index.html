@@ -1,1 +1,162 @@
-index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The official website of Ini Swagz, Nigerian recording artist, and Loveland Records.">
+  <title>Ini Swagz | Loveland Records</title>
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: #0b0b0b;
+      color: #f5f1e8;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 15px;
+      padding: 20px 7%;
+      border-bottom: 1px solid #343026;
+    }
+    .logo { color: #e6bd63; font-weight: bold; letter-spacing: 2px; }
+    nav { display: flex; gap: 16px; flex-wrap: wrap; }
+    nav a, a { color: #e6bd63; text-decoration: none; }
+    nav a:hover, a:hover { color: white; }
+    .hero {
+      min-height: 75vh;
+      padding: 90px 8%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: radial-gradient(ellipse at top right, #44351b, #0b0b0b 60%);
+    }
+    .eyebrow {
+      color: #e6bd63;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      font-size: 12px;
+    }
+    h1 { font-size: clamp(48px, 10vw, 94px); line-height: 1; margin: 18px 0; }
+    h1 span { color: #e6bd63; }
+    .hero p { max-width: 600px; color: #c9c5bb; font-size: 18px; }
+    .button {
+      display: inline-block;
+      padding: 13px 22px;
+      border: 1px solid #e6bd63;
+      border-radius: 4px;
+      margin: 12px 10px 0 0;
+      font-weight: bold;
+    }
+    .button.primary { background: #e6bd63; color: #111; }
+    section { padding: 65px 8%; }
+    section h2 { font-size: 32px; margin-top: 0; }
+    .muted { color: #bdb8ac; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; }
+    .card { padding: 24px; background: #171613; border: 1px solid #353027; border-radius: 8px; }
+    .card h3 { color: #e6bd63; }
+    .label { color: #e6bd63; font-size: 12px; letter-spacing: 2px; }
+    .contact { background: #171613; }
+    footer { padding: 25px 8%; border-top: 1px solid #343026; color: #aaa; font-size: 13px; }
+    @media (max-width: 520px) {
+      header { align-items: flex-start; flex-direction: column; }
+      .hero { min-height: 65vh; padding-top: 65px; }
+      nav { gap: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">LOVELAND RECORDS</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#music">Music</a>
+      <a href="#label">The Label</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="eyebrow">Loveland Records presents</div>
+      <h1>INI <span>SWAGZ.</span></h1>
+      <p>
+        Music, identity and ambition. Discover the sound and journey
+        of Ini Swagz, a Nigerian artist building his own path.
+      </p>
+      <div>
+        <a class="button primary" href="#music">Explore the Music</a>
+        <a class="button" href="#about">Meet the Artist</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="eyebrow">The Artist</div>
+      <h2>Meet Ini Swagz</h2>
+      <p class="muted">
+        Ini Swagz is a Nigerian recording artist whose musical journey
+        began with a passion for singing and songwriting. Through
+        creativity, dedication and a developing sound, he continues
+        working toward a bigger audience.
+      </p>
+    </section>
+
+    <section id="music">
+      <div class="eyebrow">Listen & Discover</div>
+      <h2>Music</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="label">FEATURED SONG</div>
+          <h3>10 Toes</h3>
+          <p class="muted">Discover the track by Ini Swagz.</p>
+          <a href="https://audiomack.com/" target="_blank" rel="noopener">Find on Audiomack ↗</a>
+        </article>
+        <article class="card">
+          <div class="label">FIRST RELEASE</div>
+          <h3>Messed Up</h3>
+          <p class="muted">A part of the artist's early musical journey.</p>
+          <a href="https://open.spotify.com/" target="_blank" rel="noopener">Explore Spotify ↗</a>
+        </article>
+        <article class="card">
+          <div class="label">MORE MUSIC</div>
+          <h3>Latest Releases</h3>
+          <p class="muted">Explore more songs and new releases.</p>
+          <a href="https://www.youtube.com/" target="_blank" rel="noopener">Visit YouTube ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="label">
+      <div class="eyebrow">Independent Music</div>
+      <h2>Loveland Records</h2>
+      <p class="muted">
+        A home for creativity, musical expression and emerging talent.
+        Follow the journey as new music and projects take shape.
+      </p>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="eyebrow">Get in Touch</div>
+      <h2>Business & Collaborations</h2>
+      <p class="muted">
+        For bookings, collaborations and professional enquiries,
+        reach out through Ini Swagz's official social channels.
+      </p>
+      <a class="button primary" href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Ini Swagz · Loveland Records. All rights reserved.
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+  </html>
+  
